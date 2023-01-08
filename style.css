@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(60, 57, 57);
+    color: white;
+    font-family: sans-serif;
+}
+/* CSS applied to Navigation Menu & Logo */
+.navigation{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #4e4545;
+}
+.logo{
+    display: flex;
+    margin: 10px 50px;
+}
+.logo h1{
+    font-size: 35px;
+    color: rgba(20, 238, 209, 0.815);
+    border: 4px ridge white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 0px 20px 1px;
+    text-shadow: 0 0 0.1em #16edcf;
+}
+.logo span{
+    line-height: 70px;
+    font-size: 30px;
+    color: transparent;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #fff;
+    letter-spacing: 2.2px;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    margin: 34px 50px;
+    transition: 0.7s ease-in-out;
+}
+.navbar img{
+    display: none;
+}
+.navbar li a{
+    margin: 0px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    color: #16edcf;
+}
+.menu_icon{
+    margin: 30px 10px;
+    line-height: 30px;
+    font-size: 30px;
+    display: none;
+}
+/* CSS Applied to Short Intro and Profile Section */
+.profile{
+    margin-top: 100px;
+}
+.intro{
+    width: 282px;
+    padding: 30px;
+    margin: auto;
+    position: relative;
+    border-radius: 40px;
+    background-image: linear-gradient(to right,#3838e3,#2e8eb5);
+    animation: slider 4s ease-in-out infinite;
+    transition: all 5s ease-in-out infinite;
+    z-index: -1;
+}
+@keyframes slider {
+    0%{
+        transform: translateX(-10%);
+    }
+    50%{
+        transform: translateX(10%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+.intro span{
+    font-size: 50px;
+    text-shadow: 0px 0px 0.1em orange;
+}
+.intro p{
+    font-size: 40px;
+    text-shadow: 2px 3px 3px orange;
+}
+/* CSS applied to About Section */
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.about_head h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-color: #16edcf;
+    -webkit-text-stroke-width: 2.5px;
+}
+.pro-pic img{
+    width: 190px;
+    height: 200px;
+    border-radius: 50%;
+}
+.about_content{
+    width: 250px;
+    font-size: 21px;
+    margin-top: 20px;
+}
+/* CSS applied to Project Section */
+.project_heading h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-color: #16edcf;
+    -webkit-text-stroke-width: 2.5px;
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 100px;
+}
+.project_1{
+    width: 400px;
+    height: 280px;
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 0px 3px 24px 0px rgb(99, 95, 95);
+}
+.projects img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.pro_img{
+    overflow: hidden;
+}
+.project_1:hover .pro_img img{
+    transform: scale(1.08);
+    transition: 0.5s ease-in-out;
+    filter: grayscale(1);
+}
+.project_button {
+    text-align: center;
+    margin: 10px;
+}
+.project_button button{
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 0;
+    background-image: linear-gradient(to bottom left,black ,rgb(64, 219, 230));
+    transition: 0.6s;
+    margin: 0 10px;
+}
+.project_button a{
+    color: #fff;
+    text-decoration: none;
+}
+.project_button button:hover{
+    background-image: linear-gradient(to bottom right,black ,rgb(64, 219, 230));
+}
+/* CSS applied to Contact Section */
+.contact_header h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-color: #16edcf;
+    -webkit-text-stroke-width: 2.5px;
+}
+.contact_platform{
+    text-align: center;
+    margin: 50px;
+}
+.contact_info{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.contact_platform a{
+    margin: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 8px;
+}
+.contact_platform a i{
+    width: 40px;
+    background-color: #fff;
+    color: black;
+    padding: 10px 5px;
+    border-radius: 50%;
+}
+.contact_platform a i:hover{
+    background-color: #5a69ee;
+    color: #fff;
+}
+@media (max-width:900px) {
+    .menu_icon{
+        display: block;
+    }
+    .logo{
+        margin: 10px 0px;
+    }
+    .logo span{
+        line-height: 70px;
+    }
+    .projects{
+        margin: 50px 20px;
+    }
+    .project_1{
+        margin: 30px 0;
+    }
+    .project_button {
+        margin: 12px;
+    }
+    .navbar{
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -117%;
+        margin: 0px;
+        text-align: center;
+        background: #4e4545;
+    }
+    .navbar li{
+        margin: 80px 0;
+    }
+    .navbar img{
+        display: block;
+        position: absolute;
+        width: 40px;
+        top: 5px;
+        right: 8px;
+    }
+}
