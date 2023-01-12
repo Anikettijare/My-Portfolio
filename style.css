@@ -44,7 +44,7 @@ body{
     margin: 34px 50px;
     transition: 0.7s ease-in-out;
 }
-.navbar img{
+.navbar li img{
     display: none;
 }
 .navbar li a{
@@ -55,6 +55,7 @@ body{
 }
 .navbar li a:hover{
     color: #16edcf;
+    border-bottom: 1px solid #16eda5;
 }
 .menu_icon{
     margin: 30px 10px;
@@ -214,6 +215,11 @@ body{
     background-color: #5a69ee;
     color: #fff;
 }
+.copyright{
+    text-align: center;
+    padding: 30px;
+    
+}
 @media (max-width:900px) {
     .menu_icon{
         display: block;
@@ -247,11 +253,14 @@ body{
     .navbar li{
         margin: 80px 0;
     }
-    .navbar img{
+    .navbar li img{
         display: block;
         position: absolute;
         width: 40px;
         top: 5px;
         right: 8px;
+    }
+    .contact_platform a {
+        margin: 10px;
     }
 }
