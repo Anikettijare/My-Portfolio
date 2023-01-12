@@ -168,7 +168,7 @@ body{
     font-size: 16px;
     border-radius: 20px;
     border: 0;
-    background-image: linear-gradient(to bottom left,black ,rgb(64, 219, 230));
+    background-image: linear-gradient(to bottom left,black ,rgb(197,197,197));
     transition: 0.6s;
     margin: 0 10px;
 }
@@ -177,7 +177,7 @@ body{
     text-decoration: none;
 }
 .project_button button:hover{
-    background-image: linear-gradient(to bottom right,black ,rgb(64, 219, 230));
+    background-image: linear-gradient(to bottom right,black ,rgb(197,197,197));
 }
 /* CSS applied to Contact Section */
 .contact_header h1{
