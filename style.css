@@ -217,8 +217,10 @@ body{
 }
 .copyright{
     text-align: center;
-    padding: 30px;
-    
+    padding: 30px;   
+}
+.copyright span{
+    color: #a1a1f1;
 }
 @media (max-width:900px) {
     .menu_icon{
