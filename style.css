@@ -266,3 +266,9 @@ body{
         margin: 10px;
     }
 }
+@media (max-width:500px) {
+    .project_1{
+        width: 400px;
+        height: 240px;
+    }   
+}
