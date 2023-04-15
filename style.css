@@ -76,7 +76,7 @@ body{
     background-image: linear-gradient(to right,#3838e3,#2e8eb5);
     transition: all 5s ease-in-out infinite;
     z-index: -1;
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 .intro span{
     font-size: 50px;
