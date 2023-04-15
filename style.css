@@ -114,9 +114,10 @@ body{
     -webkit-text-stroke-width: 2.5px;
 }
 .pro-pic img{
-    width: 190px;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
 }
 .about_content{
     width: 320px;
