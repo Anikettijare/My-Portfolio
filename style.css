@@ -74,20 +74,9 @@ body{
     position: relative;
     border-radius: 40px;
     background-image: linear-gradient(to right,#3838e3,#2e8eb5);
-    animation: slider 4s ease-in-out infinite;
     transition: all 5s ease-in-out infinite;
     z-index: -1;
-}
-@keyframes slider {
-    0%{
-        transform: translateX(-10%);
-    }
-    50%{
-        transform: translateX(10%);
-    }
-    100%{
-        transform: translateX(-10%);
-    }
+    animation-duration: 4s;
 }
 .intro span{
     font-size: 50px;
@@ -271,5 +260,11 @@ body{
     .project_1{
         width: 400px;
         height: 240px;
-    }   
+    } 
+    .intro{
+        width: 190px;
+    }  
+    .contact_platform a {
+        margin: 5px;
+    }
 }
